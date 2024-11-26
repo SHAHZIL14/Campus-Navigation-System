@@ -281,7 +281,8 @@ p::first-letter {
 
 .hamburger .line {
   width: 25px;
-  height: 3px;
+  height: 4px;
+  border-radius: 5px;
   background-color:#39773D;
 }
 
@@ -299,7 +300,7 @@ p::first-letter {
 
 .hamburger.open .line:nth-child(3) {
   transform: rotate(-50deg);
-  translate:0px -2px;
+  translate:0px -5.5px;
   position: relative;
   transition: all ease-in-out 0.5s;
   bottom: 5px;

@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   Navbar,
   CollegeLogo,
@@ -7,8 +8,9 @@ import {
   Footer,
 } from "../index.js";
 function Home() {
+ 
   const screenWidth = window.innerWidth;
-  let lg = screenWidth > 485 ? true : false;
+  let lg = screenWidth > 768 ? true : false;
 
   let paragraphOne =
     "Campus Navigator helps students easily navigate their college campus with  interactive maps and real-time location tracking. It provides directions to buildings and facilities, along with event schedules and campus resources. User-friendly and efficient, it enhances the overall campus experience Campus Navigator helps students easily navigate their college campus with  interactive maps and real-time location tracking. It provides directions to buildings and facilities, along with event ";
@@ -30,7 +32,10 @@ function Home() {
         </div>
       )}
 
-      <GeneralPara matter={paragraphOne} width={`${lg?"w-4/5":"w-11/12"}`} />
+      <GeneralPara
+        matter={paragraphOne}
+        width={`${lg ? "w-4/5" : "w-11/12"}`}
+      />
       <GeneralContainer
         styleObject={{
           boxSizing: "border-box",
@@ -51,15 +56,15 @@ function Home() {
         styleObject={{
           fontFamily: "Poppins",
           fontWeight: "semi-bold",
-          padding: lg?`10px 30px` :`5px 20px`,
+          padding: lg ? `10px 30px` : `5px 20px`,
           position: "absolute",
           bottom: lg ? "15%" : "10%",
-          right:lg?"10%":"",
-          margin:lg?"0px auto":"",
+          right: lg ? "10%" : "",
+          margin: lg ? "0px auto" : "",
           textTransform: "uppercase",
           borderRadius: "50px",
           letterSpacing: "0.5px",
-          fontSize: lg?"15px":"13px",
+          fontSize: lg ? "15px" : "13px",
         }}
         text={"start navigation"}
       />

@@ -1,14 +1,26 @@
-import { useState } from "react";
+import { useState,useEffect } from "react";
 
 function Navbar() {
-  let lg = window.innerWidth > 485 ? true : false;
-  const [isMenuOpen, setIsMenuOpen] = useState(true);
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  let lg = window.innerWidth > 768 ? true : false;
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
   const navItems = ["home", "most searched", "how to use", "about", "contact"];
   return (
-    <div className=" absolute lg:static top-1/4 right-10 bg-white lg:bg-transparent lg:w-screen  ">
+    <div className={` absolute lg:sticky lg:top-0 top-1/4 right-10 bg-white ${scrollY>50?"lg:bg-white z-10":"lg:bg-transparent"} lg:w-screen `}>
         <div
         className={`hamburger  absolute top-7 right-2  ${isMenuOpen ? "open" : ""}`}
         onClick={toggleMenu}
