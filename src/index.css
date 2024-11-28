@@ -1,6 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root{
+  --product-color:#39773D;
+}
+
 .roboto-thin {
   font-family: "Roboto", serif;
   font-weight: 100;
@@ -191,7 +196,6 @@
 .fredoka{
   font-family: "Fredoka", serif;
   font-optical-sizing: auto;
-  font-weight: normal;
   font-style: normal;
   font-variation-settings:
     "wdth" 100;

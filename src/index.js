@@ -5,4 +5,6 @@ import GeneralPara from "./components/GeneralPara";
 import GeneralContainer from "./components/GeneralContainer";
 import GeneralButton from "./components/GeneralButton";
 import Footer from "./components/Footer";
-export {Home,Navbar,CollegeLogo,GeneralPara,GeneralContainer,GeneralButton,Footer};
+import VideoBox from "./components/VideoBox";
+import GeneralHeadingBox from "./components/GeneralHeadingBox";
+export {Home,Navbar,CollegeLogo,GeneralPara,GeneralContainer,GeneralButton,Footer,VideoBox,GeneralHeadingBox};

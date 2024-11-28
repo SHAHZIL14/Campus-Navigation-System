@@ -8,6 +8,9 @@ export default {
     extend: {
       backgroundImage: {
         'home': "url('HomeBg.png')",
+      },
+      colors:{
+      "product-color": "var(--product-color)"
       }
     },
   },

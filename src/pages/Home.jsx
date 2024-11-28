@@ -13,20 +13,20 @@ function Home() {
   let lg = screenWidth > 768 ? true : false;
 
   let paragraphOne =
-    "Campus Navigator helps students easily navigate their college campus with  interactive maps and real-time location tracking. It provides directions to buildings and facilities, along with event schedules and campus resources. User-friendly and efficient, it enhances the overall campus experience Campus Navigator helps students easily navigate their college campus with  interactive maps and real-time location tracking. It provides directions to buildings and facilities, along with event ";
+    "Campus Navigator helps students easily navigate their college campus with  interactive maps and real-time location tracking. It provides directions to buildings and facilities, along with event schedules and campus resources. User-friendly and efficient, it enhances the overall campus experience Campus Navigator helps students easily navigate their college campus with  interactive maps and real-time location tracking. It provides directions to buildings and facilities, along with event  ";
 
   let paragraphTwo =
     "schedules and campus resources. User-friendly and efficient, it enhances the overall campus experienceCampus Navigator helps students easily navigate their college campus with  interacti and efficient, it enhances the overall campus experienceschedules and campus resources. User-friendly and efficient, it enhances the overall campus experienceCampus Navigator helps students easily navigate helps students easily navigate  navigate  easily but  key act navigate  full  ";
 
   return (
-    <div className="h-auto  border-2 w-full bg-home bg-cover  gap-1 relative flex flex-col items-center">
+    <div className="h-auto w-full bg-home bg-cover  gap-1 relative flex flex-col items-center">
       {lg ? (
         <>
           <Navbar />
           <CollegeLogo />
         </>
       ) : (
-        <div className=" flex justify-center h-auto items-start w-full static ">
+        <div className=" flex justify-center h-auto items-start overflow-y-visible w-full relative ">
           <CollegeLogo />
           <Navbar />
         </div>
@@ -41,7 +41,7 @@ function Home() {
           boxSizing: "border-box",
           width: "80.5%",
           height: "auto",
-          margin: "10px",
+          // margin: "10px",
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
@@ -57,10 +57,10 @@ function Home() {
           fontFamily: "Poppins",
           fontWeight: "semi-bold",
           padding: lg ? `10px 30px` : `5px 20px`,
-          position: "absolute",
+          position: lg?"absolute":"",
           bottom: lg ? "15%" : "10%",
           right: lg ? "10%" : "",
-          margin: lg ? "0px auto" : "",
+          margin: "30px",
           textTransform: "uppercase",
           borderRadius: "50px",
           letterSpacing: "0.5px",
