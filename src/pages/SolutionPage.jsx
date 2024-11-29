@@ -3,19 +3,16 @@ import {
   Navbar,
   GeneralHeadingBox,
   SearchBar,
-  GeneralPara,
-  GeneralButton,
+  SelectButton,
   Footer,
-  SelectButton
+  GeneralButton,
+  SolutionBox
 } from "../index";
-
-function HowToUse() {
+function SolutionPage() {
   const screenWidth = window.innerWidth;
   let lg = screenWidth > 768 ? true : false;
-  let pointsPara =
-    "Search the desire routes above.\n OR \n 1. Select the most nearby “Start-spot” below.\n2. Select the most nearby “End-spot” below.\n3. Click on NAVIGATE to get routed!";
   return (
-    <div className="h-auto w-auto gap-1 relative flex flex-col items-center">
+    <div className="h-auto w-auto  gap-1 relative flex flex-col items-center">
       {lg ? (
         <>
           <Navbar />
@@ -26,17 +23,10 @@ function HowToUse() {
           <Navbar />
         </div>
       )}
-      <GeneralHeadingBox heading={"how to get routes"} />
+      <GeneralHeadingBox heading={"checkout this solution"} />
       <SearchBar />
-      <GeneralPara
-        matter={pointsPara}
-        width={`${lg ? "w-4/5" : "w-11/12"}`}
-        classes={
-          "fredoka font-semibold text-product-color text-base lg:text-xl text-center"
-        }
-      />
-      <SelectButton/>
-      
+      <SolutionBox/>
+      <SelectButton />
       <GeneralButton
         styleObject={{
           fontFamily: "Poppins",
@@ -55,4 +45,5 @@ function HowToUse() {
     </div>
   );
 }
-export default HowToUse;
+
+export default SolutionPage;
