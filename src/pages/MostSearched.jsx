@@ -14,35 +14,6 @@ function MostSearched() {
   const screenWidth = window.innerWidth;
   let lg = screenWidth > 768 ? true : false;
   return (
-    // <div className="relative flex flex-col items-center w-full h-screen">
-    //   {lg ? (
-    //     <Navbar />
-    //   ) : (
-    //     <div className=" flex justify-center h-auto items-start w-full static ">
-    //       <CollegeLogo />
-    //       <Navbar />
-    //     </div>
-    //   )}
-    //   <Navbar />
-    //   <GeneralHeadingBox heading={"mostly searched"} />
-    //   <VideoBox />
-    //   <GeneralButton
-    //     styleObject={{
-    //       fontFamily: "Poppins",
-    //       fontWeight: "semi-bold",
-    //       padding: lg ? `10px 30px` : `5px 20px`,
-    //       bottom: lg ? "15%" : "10%",
-    //       right: lg ? "40%" : "",
-    //       margin: lg ? "auto auto" : "",
-    //       textTransform: "uppercase",
-    //       borderRadius: "50px",
-    //       letterSpacing: "0.5px",
-    //       fontSize: lg ? "15px" : "13px",
-    //     }}
-    //     text={"start navigation"}
-    //   />
-    //   <Footer />
-    // </div>
     <div className="h-auto w-auto  gap-1 relative flex flex-col items-center">
       {lg ? (
         <>

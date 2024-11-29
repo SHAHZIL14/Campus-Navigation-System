@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import MostSearched from "./pages/MostSearched";
 import HowToUse from "./pages/HowToUse";
 import SolutionPage from "./pages/SolutionPage";
+import About from "./pages/About";
 //pages
 // components
 import Navbar from "./components/Navbar";
@@ -16,5 +17,6 @@ import GeneralHeadingBox from "./components/GeneralHeadingBox";
 import SearchBar from "./components/Searchbar";
 import SelectButton from "./components/SelectButton";
 import SolutionBox from "./components/SolutionBox";
+import WaterMark from "./components/WaterMark";
 // components
-export {Home,MostSearched,HowToUse,Navbar,CollegeLogo,GeneralPara,GeneralContainer,GeneralButton,Footer,VideoBox,GeneralHeadingBox,SearchBar,SelectButton,SolutionPage,SolutionBox};
+export {Home,MostSearched,HowToUse,Navbar,CollegeLogo,GeneralPara,GeneralContainer,GeneralButton,Footer,VideoBox,GeneralHeadingBox,SearchBar,SelectButton,SolutionPage,SolutionBox,About,WaterMark};

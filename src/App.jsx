@@ -1,11 +1,12 @@
-import { Home,MostSearched,HowToUse, SolutionPage } from "./index.js";
+import { Home,MostSearched,HowToUse, SolutionPage,About } from "./index.js";
 function App() {
   return (
     <div className="h-auto w-auto">
       {/* <Home/> */}
       {/* <MostSearched/> */}
       {/* <HowToUse/> */}
-      <SolutionPage/>
+      {/* <SolutionPage/> */}
+      <About/>
     </div>
   );
 }
