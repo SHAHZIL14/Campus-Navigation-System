@@ -35,6 +35,7 @@ function Home() {
       <GeneralPara
         matter={paragraphOne}
         width={`${lg ? "w-4/5" : "w-11/12"}`}
+        classes={"baloo bhai 2 text-base lg:text-lg text-justify"}
       />
       <GeneralContainer
         styleObject={{
@@ -49,7 +50,7 @@ function Home() {
           overFlow: "hidden",
         }}
       >
-        {lg ? <GeneralPara matter={paragraphTwo} width={"w-3/5"} /> : null}
+        {lg ? <GeneralPara matter={paragraphTwo} width={"w-3/5"} classes={"baloo bhai 2 text-base lg:text-lg text-justify"} /> : null}
       </GeneralContainer>
 
       <GeneralButton

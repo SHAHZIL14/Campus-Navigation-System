@@ -1,10 +1,10 @@
-import { Home } from "./index.js";
-import MostSearched from "./pages/MostSearched.jsx";
+import { Home,MostSearched,HowToUse } from "./index.js";
 function App() {
   return (
     <div className="h-auto w-auto">
+      {/* <Home/> */}
       {/* <MostSearched/> */}
-      <Home/>
+      <HowToUse/>
     </div>
   );
 }
