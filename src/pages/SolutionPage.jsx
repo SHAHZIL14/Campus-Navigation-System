@@ -6,26 +6,21 @@ import {
   SelectButton,
   Footer,
   GeneralButton,
-  SolutionBox
+  SolutionBox,
 } from "../index";
 function SolutionPage() {
   const screenWidth = window.innerWidth;
   let lg = screenWidth > 768 ? true : false;
   return (
-    <div className="h-auto w-auto  gap-1 relative flex flex-col items-center">
-      {lg ? (
-        <>
-          <Navbar />
-        </>
-      ) : (
+    <div className="h-auto w-auto  gap-1 relative flex flex-col items-center my-5">
+      {lg ? null : (
         <div className=" flex justify-center h-auto items-start w-full relative ">
           <CollegeLogo />
-          <Navbar />
         </div>
       )}
       <GeneralHeadingBox heading={"checkout this solution"} />
       <SearchBar />
-      <SolutionBox/>
+      <SolutionBox />
       <SelectButton />
       <GeneralButton
         styleObject={{
@@ -41,7 +36,7 @@ function SolutionPage() {
         }}
         text={"Navigate"}
       />
-      <Footer/>
+
     </div>
   );
 }

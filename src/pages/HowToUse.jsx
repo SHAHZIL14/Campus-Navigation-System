@@ -15,17 +15,8 @@ function HowToUse() {
   let pointsPara =
     "Search the desire routes above.\n OR \n 1. Select the most nearby “Start-spot” below.\n2. Select the most nearby “End-spot” below.\n3. Click on NAVIGATE to get routed!";
   return (
-    <div className="h-auto w-auto gap-1 relative flex flex-col items-center">
-      {lg ? (
-        <>
-          <Navbar />
-        </>
-      ) : (
-        <div className=" flex justify-center h-auto items-start w-full relative ">
-          <CollegeLogo />
-          <Navbar />
-        </div>
-      )}
+    <div className="h-auto w-auto gap-1 relative flex flex-col items-center my-5">
+     
       <GeneralHeadingBox heading={"how to get routes"} />
       <SearchBar />
       <GeneralPara
@@ -41,6 +32,8 @@ function HowToUse() {
         styleObject={{
           fontFamily: "Poppins",
           fontWeight: "semi-bold",
+          padding: lg ? `10px 50px` : `5px 20px`,
+        //   position: lg?"":"absolute",
           bottom: lg ? "15%" : "%",
           right: lg ? "10%" : "",
           margin: "20px",
@@ -51,7 +44,6 @@ function HowToUse() {
         }}
         text={"Navigate"}
       />
-      <Footer/>
     </div>
   );
 }

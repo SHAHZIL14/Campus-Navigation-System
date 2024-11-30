@@ -1,6 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer components {
+  .active {
+    color: white;
+    background-color:#39773D;
+  }
+}
 
 :root{
   --product-color:#39773D;
@@ -220,7 +226,11 @@
   font-weight: 700;
   font-style: normal;
 }
-
+.ibm-plex-sans{
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
 
 .li-spacing{
   letter-spacing: 1.75px;
@@ -331,4 +341,9 @@ p::first-letter {
   .hamburger {
     display: flex;
   }
+}
+
+.active{
+  color: white;
+  background-color: #39773D;
 }

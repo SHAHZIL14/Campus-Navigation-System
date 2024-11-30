@@ -1,14 +1,9 @@
-import { Home,MostSearched,HowToUse, SolutionPage,About } from "./index.js";
+import { Route, createBrowserRouter } from "react-router-dom";
+import { Home, MostSearched, HowToUse, SolutionPage, About, Contact } from "./index.js";
+import { RouterProvider } from "react-router";
 function App() {
-  return (
-    <div className="h-auto w-auto">
-      {/* <Home/> */}
-      {/* <MostSearched/> */}
-      {/* <HowToUse/> */}
-      {/* <SolutionPage/> */}
-      <About/>
-    </div>
-  );
+ 
+  return 
 }
 
 export default App;

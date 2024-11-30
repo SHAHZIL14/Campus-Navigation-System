@@ -8,7 +8,6 @@ import {
   Footer,
 } from "../index.js";
 function Home() {
- 
   const screenWidth = window.innerWidth;
   let lg = screenWidth > 768 ? true : false;
 
@@ -19,19 +18,12 @@ function Home() {
     "schedules and campus resources. User-friendly and efficient, it enhances the overall campus experienceCampus Navigator helps students easily navigate their college campus with  interacti and efficient, it enhances the overall campus experienceschedules and campus resources. User-friendly and efficient, it enhances the overall campus experienceCampus Navigator helps students easily navigate helps students easily navigate  navigate  easily but  key act navigate  full  ";
 
   return (
-    <div className="h-auto w-full bg-home bg-cover  gap-1 relative flex flex-col items-center">
+    <div className="h-auto w-full  gap-1 relative flex flex-col items-center my-5">
       {lg ? (
-        <>
-          <Navbar />
-          <CollegeLogo />
-        </>
+        <CollegeLogo />
       ) : (
-        <div className=" flex justify-center h-auto items-start overflow-y-visible w-full relative ">
-          <CollegeLogo />
-          <Navbar />
-        </div>
+        <div className=" flex justify-center h-auto items-start w-full relative "></div>
       )}
-
       <GeneralPara
         matter={paragraphOne}
         width={`${lg ? "w-4/5" : "w-11/12"}`}
@@ -50,7 +42,13 @@ function Home() {
           overFlow: "hidden",
         }}
       >
-        {lg ? <GeneralPara matter={paragraphTwo} width={"w-3/5"} classes={"baloo bhai 2 text-base lg:text-lg text-justify"} /> : null}
+        {lg ? (
+          <GeneralPara
+            matter={paragraphTwo}
+            width={"w-3/5"}
+            classes={"baloo bhai 2 text-base lg:text-lg text-justify"}
+          />
+        ) : null}
       </GeneralContainer>
 
       <GeneralButton
@@ -58,8 +56,8 @@ function Home() {
           fontFamily: "Poppins",
           fontWeight: "semi-bold",
           padding: lg ? `10px 30px` : `5px 20px`,
-          position: lg?"absolute":"",
-          bottom: lg ? "15%" : "10%",
+          position: lg ? "absolute" : "",
+          bottom: lg ? "10%" : "10%",
           right: lg ? "10%" : "",
           margin: "30px",
           textTransform: "uppercase",
@@ -69,7 +67,6 @@ function Home() {
         }}
         text={"start navigation"}
       />
-      <Footer />
     </div>
   );
 }

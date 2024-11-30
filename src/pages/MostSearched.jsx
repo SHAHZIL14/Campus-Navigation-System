@@ -14,17 +14,8 @@ function MostSearched() {
   const screenWidth = window.innerWidth;
   let lg = screenWidth > 768 ? true : false;
   return (
-    <div className="h-auto w-auto  gap-1 relative flex flex-col items-center">
-      {lg ? (
-        <>
-          <Navbar />
-        </>
-      ) : (
-        <div className=" flex justify-center h-auto items-start w-full relative ">
-          <CollegeLogo />
-          <Navbar />
-        </div>
-      )}
+    <div className="h-auto w-auto  gap-1 relative flex flex-col items-center my-5">
+    
       <GeneralHeadingBox heading={"mostly searched"}/>
       <VideoBox />
 
@@ -44,7 +35,7 @@ function MostSearched() {
         }}
         text={"start navigation"}
       />
-      <Footer />
+
     </div>
   );
 }

@@ -5,17 +5,8 @@ function About() {
   const screenWidth = window.innerWidth;
   let lg = screenWidth > 768 ? true : false;
   return (
-    <div className="h-auto w-full bg-home bg-cover  gap-1 relative flex flex-col items-center">
-      {lg ? (
-        <>
-          <Navbar />
-        </>
-      ) : (
-        <div className=" flex justify-center h-auto items-start w-full relative ">
-          <CollegeLogo />
-          <Navbar />
-        </div>
-      )}
+    <div className="h-auto w-full  gap-1 relative flex flex-col items-center my-5">
+     
       <GeneralHeadingBox heading={"about ourselves"} />
       <GeneralPara
         matter={aboutPara}
@@ -23,7 +14,6 @@ function About() {
         classes={"baloo bhai 2 text-sm lg:text-base text-justify lg:text-center "}
       />
       <WaterMark text={"Branch cse \n 2022-26"}/>
-      <Footer/>
     </div>
   );
 }
