@@ -71,7 +71,7 @@ function Contact() {
           <div className="my-5">
             <label
               htmlFor="name"
-              className="capitalize ibm-plex-sans font-semibold text-product-color"
+              className="capitalize text-xs lg:text-base ibm-plex-sans font-semibold text-product-color"
             >
               name*
             </label>
@@ -90,7 +90,7 @@ function Contact() {
           <div className="my-5">
             <label
               htmlFor="mailId"
-              className="capitalize ibm-plex-sans font-semibold text-product-color"
+              className="capitalize text-xs lg:text-base ibm-plex-sans font-semibold text-product-color"
             >
               mail ID*
             </label>
@@ -109,7 +109,7 @@ function Contact() {
           <div className="my-5">
             <label
               htmlFor="phoneNumber"
-              className="capitalize ibm-plex-sans font-semibold text-product-color"
+              className="capitalize text-xs lg:text-base ibm-plex-sans font-semibold text-product-color"
             >
               phone
             </label>
@@ -136,7 +136,7 @@ function Contact() {
               <div>
                 <label
                   htmlFor="student"
-                  className="capitalize ibm-plex-sans font-semibold text-product-color mr-2"
+                  className="capitalize text-xs lg:text-base ibm-plex-sans font-semibold text-product-color mr-2"
                 >
                   Student
                 </label>
@@ -152,7 +152,7 @@ function Contact() {
               <div>
                 <label
                   htmlFor="Faculty"
-                  className="capitalize ibm-plex-sans font-semibold text-product-color mr-2"
+                  className="capitalize text-xs lg:text-base ibm-plex-sans font-semibold text-product-color mr-2"
                 >
                   Faculty
                 </label>
@@ -168,7 +168,7 @@ function Contact() {
               <div>
                 <label
                   htmlFor="staff"
-                  className="capitalize ibm-plex-sans font-semibold text-product-color mr-2"
+                  className="capitalize text-xs lg:text-base ibm-plex-sans font-semibold text-product-color mr-2"
                 >
                   Staff
                 </label>
@@ -184,7 +184,7 @@ function Contact() {
               <div>
                 <label
                   htmlFor="others"
-                  className="capitalize ibm-plex-sans font-semibold text-product-color mr-2"
+                  className="capitalize text-xs lg:text-base ibm-plex-sans font-semibold text-product-color mr-2"
                 >
                   others
                 </label>
@@ -201,7 +201,7 @@ function Contact() {
             <div className="my-5">
               <label
                 htmlFor="message"
-                className="capitalize ibm-plex-sans font-semibold text-product-color"
+                className="capitalize text-xs lg:text-base ibm-plex-sans font-semibold text-product-color"
               >
                 Your thought*
               </label>
@@ -225,7 +225,7 @@ function Contact() {
                 className="bg-product-color py-1 hover:bg-white hover:text-product-color hover:border-product-color  border-2 rounded-md text-white px-4 mx-auto"
               >
                 {" "}
-                Submit
+                Send
               </button>
             </div>
           </div>

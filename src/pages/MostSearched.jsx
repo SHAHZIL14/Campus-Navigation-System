@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import {
   CollegeLogo,
   GeneralHeadingBox,
@@ -15,27 +16,26 @@ function MostSearched() {
   let lg = screenWidth > 768 ? true : false;
   return (
     <div className="h-auto w-auto  gap-1 relative flex flex-col items-center my-5">
-    
-      <GeneralHeadingBox heading={"mostly searched"}/>
+      <GeneralHeadingBox heading={"mostly searched"} />
       <VideoBox />
-
-      <GeneralButton
-        styleObject={{
-          fontFamily: "Poppins",
-          fontWeight: "semi-bold",
-          padding: lg ? `10px 30px` : `5px 20px`,
-        //   position: lg?"":"absolute",
-          bottom: lg ? "15%" : "%",
-          right: lg ? "10%" : "",
-          margin: "20px",
-          textTransform: "uppercase",
-          borderRadius: "50px",
-          letterSpacing: "0.5px",
-          fontSize: lg ? "15px" : "13px",
-        }}
-        text={"start navigation"}
-      />
-
+      <Link
+      to="/how-to-use">
+        <GeneralButton
+          styleObject={{
+            fontFamily: "Poppins",
+            fontWeight: "semi-bold",
+            //   position: lg?"":"absolute",
+            bottom: lg ? "15%" : "%",
+            right: lg ? "10%" : "",
+            margin: "20px",
+            textTransform: "uppercase",
+            borderRadius: "50px",
+            letterSpacing: "0.5px",
+            fontSize: lg ? "15px" : "13px",
+          }}
+          text={"start navigation"}
+        />
+      </Link>
     </div>
   );
 }

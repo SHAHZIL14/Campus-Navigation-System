@@ -7,6 +7,7 @@ import {
   GeneralButton,
   Footer,
 } from "../index.js";
+import { Link } from "react-router-dom";
 function Home() {
   const screenWidth = window.innerWidth;
   let lg = screenWidth > 768 ? true : false;
@@ -50,12 +51,13 @@ function Home() {
           />
         ) : null}
       </GeneralContainer>
-
+      
+      <Link
+      to="/how-to-use">
       <GeneralButton
         styleObject={{
           fontFamily: "Poppins",
           fontWeight: "semi-bold",
-          padding: lg ? `10px 30px` : `5px 20px`,
           position: lg ? "absolute" : "",
           bottom: lg ? "10%" : "10%",
           right: lg ? "10%" : "",
@@ -67,6 +69,7 @@ function Home() {
         }}
         text={"start navigation"}
       />
+      </Link>
     </div>
   );
 }

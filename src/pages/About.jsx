@@ -11,7 +11,7 @@ function About() {
       <GeneralPara
         matter={aboutPara}
         width={`${lg ? "w-4/5" : "w-11/12"}`}
-        classes={"baloo bhai 2 text-sm lg:text-base text-justify lg:text-center "}
+        classes={"baloo bhai 2 text-sm lg:text-base  text-justify "}
       />
       <WaterMark text={"Branch cse \n 2022-26"}/>
     </div>

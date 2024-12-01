@@ -13,10 +13,10 @@ function SolutionPage() {
   let lg = screenWidth > 768 ? true : false;
   return (
     <div className="h-auto w-auto  gap-1 relative flex flex-col items-center my-5">
-      {lg ? null : (
-        <div className=" flex justify-center h-auto items-start w-full relative ">
-          <CollegeLogo />
-        </div>
+      {lg ? (
+        <CollegeLogo />
+      ) : (
+        <div className=" flex justify-center h-auto items-start w-full relative "></div>
       )}
       <GeneralHeadingBox heading={"checkout this solution"} />
       <SearchBar />
@@ -26,6 +26,7 @@ function SolutionPage() {
         styleObject={{
           fontFamily: "Poppins",
           fontWeight: "semi-bold",
+  
           bottom: lg ? "15%" : "%",
           right: lg ? "10%" : "",
           margin: "20px",
