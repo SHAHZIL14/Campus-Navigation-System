@@ -8,16 +8,15 @@ import {
   GeneralButton,
   SolutionBox,
 } from "../index";
+import { useEffect } from "react";
 function SolutionPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []); 
   const screenWidth = window.innerWidth;
   let lg = screenWidth > 768 ? true : false;
   return (
     <div className="h-auto w-auto  gap-1 relative flex flex-col items-center my-5">
-      {lg ? (
-        <CollegeLogo />
-      ) : (
-        <div className=" flex justify-center h-auto items-start w-full relative "></div>
-      )}
       <GeneralHeadingBox heading={"checkout this solution"} />
       <SearchBar />
       <SolutionBox />
